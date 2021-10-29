@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Test</title>
+</head>
+
+<body>
+
+    <div class="container text-center">
+        <h1>Registro competidores</h1>
+
+        <form action="">
+            <div class="container">
+                <div class="form-group">
+                    <label for="Nombre:">Nombre</label>
+                    <input type="text" placeholder="Nombre" id="nombre-competidor">
+                </div>
+                <div class="form-group">
+                    <label for="">Apellido</label>
+                    <input type="text" placeholder="Apellido" id="apellido-competidor">
+                </div>
+                <div class="form-group">
+                    <label for="">Correo</label>
+                    <input type="email" placeholder="correo" id="correo-competidor">
+
+                </div>
+                <div class="form-group">
+                    <label for="">Numero competidor</label>
+                    <input type="text" placeholder="numero competidor" id="numero-competidor">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Categoria</label>
+                    <select name="select" id="">
+                        <option value="novato">Novato</option>
+                        <option value="middle">Midddle</option>
+                        <option value="Pro">Pro</option>
+                    </select>
+                </div>
+                <button id="btn-buscar">REGISTRAR</button>
+                <button id="reset-app">Borrar datos</button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <div class="container mt-4">
+        <h2 class="text-center">Competidores inscritos</h2>
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Pos Larga</th>
+                    <th scope="col">NOMBRE</th>
+                    <th scope="col">APELLIDO</th>
+                    <th scope="col">CORREO</th>
+                    <th scope="col">N COMPETIDOR</th>
+                </tr>
+            </thead>
+
+            <tbody id="competidores">
+
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
